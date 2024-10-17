@@ -6,7 +6,7 @@ INSTANCE_TYPE="t2.micro"                 # Instance Type (You can modify it)
 SECURITY_GROUP_ID="sg-00b3243907320dafb" # Security Group ID
 SUBNET_ID="subnet-0faaa8a76ab3f06e3"     # Subnet ID
 KEY_NAME="MyKeyvalue"                    # Key Pair Name
-INSTANCE_NAME="NewServer"          # Instance Name
+INSTANCE_NAME="Newserver_2"          # Instance Name
 
 # Create EC2 Instance
 echo "Launching EC2 instance..."
