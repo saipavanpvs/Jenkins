@@ -4,7 +4,7 @@ pipeline {
         stage ('Launching an instance'){
              steps {
                 script {
-                      sh './LaunchInstance_ec2.sh'
+                      sh './EC2_launch.sh'
                 }
           
             }
