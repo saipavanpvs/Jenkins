@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+    stages{
+        stage ('Launching an instance'){
+             steps {
+                script {
+                      sh './LaunchInstance_ec2'
+                }
+          
+            }
+        }   
+    }
+}
