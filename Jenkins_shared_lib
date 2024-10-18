@@ -3,7 +3,7 @@ pipeline {
     agent any
         stages {
             stage ('shared library') {
-                scripts {
+                script {
                     helloWorld()
                 }
             }
