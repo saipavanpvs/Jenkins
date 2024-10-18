@@ -1,11 +1,14 @@
-@Library("Jenkins-shared-library") _
+@Library('Jenkins-shared-library') _
+
 pipeline {
     agent any
-        stages {
-            steps ('shared library') {
+    stages {
+        stage('shared library') {
+            steps {
                 script {
                     helloWorld()
                 }
             }
         }
+    }
 }
