@@ -1,8 +1,15 @@
 @Library("Jenkins-shared-library") _
-
 pipeline {
     agent any
     stages {
+        stage('Check Available Steps') {
+            steps {
+                script {
+                    echo "Available steps: ${steps.collect { it.key }.join(', ')}"
+                    echo "Available globals: ${this.getBinding().getVariables().keySet().join(', ')}"
+                }
+            }
+        }
         stage('shared library') {
             steps {
                 script {
